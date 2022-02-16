@@ -61,7 +61,7 @@ const Metamask = () => {
   },[checkWalletConnect])
 
   if(isMobile()){
-    const dappUrl = ''
+    const dappUrl = 'web3-metamask-auth.netlify.app'
     const metamaskAppDeepLink = "https://metamask.app.link/dapp/" + dappUrl
     return (
       <a href={metamaskAppDeepLink}>
@@ -85,7 +85,7 @@ const Metamask = () => {
         </div>  
       </div>
       {
-          !userAccount ? <div className="content">
+          userAccount ? <div className="content">
             CONGRATULATION YOU HAVE SUCCESSFULLY LOGIN IN 
           </div> : <p className="text">connect your wallet</p>
         }
