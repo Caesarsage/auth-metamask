@@ -5,11 +5,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(236, 234, 228);
+}
+img{
+  width: 20%;
+  height: 20%x;
+  border-radius: 5%;
+  margin-bottom: 10px;
 }
 .wrapper{
+  margin-top: 10em;
   display: flex;
-  justify-content: space-between;
-  margin-top: 14px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .btn{
   background-color: #2172E5;
@@ -32,10 +42,9 @@ body {
 
 .content{
   color:  green;
-  margin-top: 20%;
+  margin-top: 20px;
   text-align: center;
   font-weight: bolder;
   border: 1px solid black;
   padding: 10px;
-
 }

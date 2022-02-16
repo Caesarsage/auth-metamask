@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import img from '../metaAuth.png'
 const Metamask = () => {
   // set states to hold wallet account details
   const [userAccount, setUserAccount] = useState()
@@ -75,7 +75,7 @@ const Metamask = () => {
   return (
     <>
       <div className='wrapper'>
-       <h1>Header</h1>
+        <img src={img} alt="" />
         <div className="connect">
           {
             userAccount ? <div className='text-connect'>
@@ -90,7 +90,6 @@ const Metamask = () => {
           </div> : <p className="text">connect your wallet</p>
         }
     </>
-    
   )
 }
 
