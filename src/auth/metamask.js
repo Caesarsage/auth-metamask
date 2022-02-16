@@ -32,6 +32,7 @@ const Metamask = () => {
     return 'ontouchstart' in window || 'onmsgesturechange' in window
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const checkWalletConnect = async (metamask =eth)=>{
     try {
       // check if metamask is installed
@@ -57,7 +58,7 @@ const Metamask = () => {
 
   useEffect(()=>{
     checkWalletConnect()
-  },[])
+  },[checkWalletConnect])
 
   if(isMobile()){
     const dappUrl = ''
