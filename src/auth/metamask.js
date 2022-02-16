@@ -87,7 +87,7 @@ const Metamask = () => {
       {
           userAccount ? <div className="content">
             CONGRATULATION YOU HAVE SUCCESSFULLY LOGIN IN 
-          </div> : <p className="text">connect your wallet</p>
+          </div> : <p className="text">connect your wallet to see message</p>
         }
     </>
   )
