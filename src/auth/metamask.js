@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import img from '../metaAuth.png'
+import img from "../assets/meta.png"
+
 const Metamask = () => {
   // set states to hold wallet account details
   const [userAccount, setUserAccount] = useState()
